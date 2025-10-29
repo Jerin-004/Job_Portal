@@ -3,9 +3,9 @@ import { NextResponse } from "next/server";
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
-export async function GET(request, { params }) {
+export async function GET(request, context) {
   try {
-    const { id } = params;
+    const { id } = await context.params; // ✅ must await
 
     console.log("Frontend API route called with ID:", id);
     console.log("Using API_BASE_URL:", API_BASE_URL);
@@ -15,6 +15,7 @@ export async function GET(request, { params }) {
       headers: {
         "Content-Type": "application/json",
       },
+      cache: "no-store",
     });
 
     console.log("Backend response status:", response.status);
@@ -40,9 +41,9 @@ export async function GET(request, { params }) {
   }
 }
 
-export async function PUT(request, { params }) {
+export async function PUT(request, context) {
   try {
-    const { id } = params;
+    const { id } = await context.params; // ✅ must await
     const body = await request.json();
 
     const response = await fetch(`${API_BASE_URL}/users/${id}`, {

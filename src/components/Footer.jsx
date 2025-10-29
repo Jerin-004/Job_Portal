@@ -106,7 +106,7 @@ export function Footer() {
                       <Users className="h-8 w-8 text-black" />
                     </div>
                     <span className="text-2xl font-bold text-blue-600">
-                      Mini LinkedIn
+                      Job Portal
                     </span>
                   </div>
                 </Link>
@@ -193,7 +193,7 @@ export function Footer() {
                 viewport={{ once: true }}
                 className="text-gray-400 text-sm flex items-center mb-4 md:mb-0"
               >
-                <span>© 2025 Mini LinkedIn.</span>
+                <span>© 2025 Job Portal.</span>
               </motion.div>
 
               <motion.button

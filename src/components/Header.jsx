@@ -181,21 +181,21 @@ export function Header() {
 
   const navItems = [
     { icon: Home, label: "Home", href: "/", active: true },
-    { icon: Users, label: "My Network", href: "/network" },
-    { icon: Briefcase, label: "Jobs", href: "/jobs" },
-    {
-      icon: MessageSquare,
-      label: "Messaging",
-      href: "/messages",
-      count: messageCount,
-    },
-    {
-      icon: Bell,
-      label: "Notifications",
-      href: "/notifications",
-      count: notificationCount,
-      hasBlinking: true,
-    },
+    // { icon: Users, label: "My Network", href: "/network" },
+    // { icon: Briefcase, label: "Jobs", href: "/jobs" },
+    // {
+    //   icon: MessageSquare,
+    //   label: "Messaging",
+    //   href: "/messages",
+    //   count: messageCount,
+    // },
+    // {
+    //   icon: Bell,
+    //   label: "Notifications",
+    //   href: "/notifications",
+    //   count: notificationCount,
+    //   hasBlinking: true,
+    // },
   ];
 
   return (
@@ -210,7 +210,7 @@ export function Header() {
                   <Users className="h-5 w-5 text-white" />
                 </div>
                 <span className="hidden sm:block font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
-                  Mini LinkedIn
+                  Job Portal
                 </span>
               </Link>
             </div>
