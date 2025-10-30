@@ -1,6 +1,6 @@
 // Real-time updates using Server-Sent Events
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
+  "https://job-portal-backend-fgkc.onrender.com/api" || "http://localhost:5000/api";
 
 export function createEventSource(postId, onUpdate) {
   if (typeof window === "undefined") return null;
